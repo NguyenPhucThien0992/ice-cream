@@ -1,0 +1,327 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    columns: #7c7c77 !important;
+}
+
+#menu li a {
+    font-family: 'Changa One', cursive;
+    columns: #333333;
+}
+
+#menu li a:hover,
+#menu li.active a {
+    color: #2fa0d5;
+    background: none
+}
+
+/* form */
+#formSearch {
+    display: block;
+    width: 169px;
+    height: 32px;
+    border: 1px solid #D5D5D5;
+    padding: 4px 11px 6px;
+    box-sizing: border-box;
+    border-radius: 14px;
+    margin: 0 10px;
+}
+
+#searchword {
+    border: none;
+    background: white;
+    box-shadow: 0 0 0;
+    padding: 0;
+}
+
+#btn-search {
+    border: none;
+    width: 18px;
+    background: url(../images/search_button.png) 0 0 no-repeat;
+}
+
+#social a {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 0;
+    height: 25px;
+    width: 27px;
+    cursor: pointer;
+}
+
+#social a.twitter {
+    background: url(../images/twitter.png) 0 0 no-repeat;
+}
+
+#social a.twitter:hover {
+    background: url(../images/twitter_active.png) 0 0 no-repeat;
+}
+
+
+#social a.facebook {
+    background: url(../images/facebook.png) 0 0 no-repeat;
+}
+
+#social a.facebook:hover {
+    background: url(../images/facebook_active.png) 0 0 no-repeat;
+}
+
+/* banner */
+#banner {
+    background: url(../images/bg_slider.gif) center bottom repeat;
+    color: white;
+}
+
+#banner h4 {
+    font-size: 60px;
+    line-height: 60px;
+    font-family: "Change One", cursive;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+#btn-menu {
+    display: inline-block;
+    font: 30px "Changa One", cursive;
+    line-height: 36px;
+    background-color: #FA97C2;
+    padding: 14px 62px;
+    border-radius: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 30px 0;
+    color: white
+}
+
+#dots {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    height: 19px;
+    line-height: 19px;
+}
+
+#dots li {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    border-radius: 19px;
+    text-align: left;
+    text-indent: 6666px;
+    background: white;
+    margin: 0 2px;
+    position: relative;
+}
+
+#dots li span {
+    border-radius: 9px;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+#dots li.current span,
+#dots li:hover span {
+    box-shadow: 0;
+    background: #73C926;
+}
+
+#menu li {
+    margin-left: 25px;
+}
+
+/* main */
+h4 {
+    font-family: "Changa One", cursive;
+    font-weight: 400;
+    color: #333333;
+    font-size: 26px;
+    margin: 10px 0;
+}
+
+.readmore {
+    text-decoration: underline;
+    color: #2fa0d5;
+}
+
+/* about */
+.about {
+    background: #FA97C2;
+    color: #814E64;
+}
+
+h3 {
+    font-family: "Changa One", cursive;
+    font-weight: 400;
+    font-size: 60px;
+    margin: 10px 0;
+}
+
+.about div>img {
+    float: left;
+    margin: 20px;
+}
+
+#formSignup {
+    border: 3px dashed #814e64;
+    padding: 20px 10px;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+#formSignup h3 {
+    font-size: 30px;
+    line-height: 28px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 20px;
+    color: white
+}
+
+#formSignup {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    height: 39px;
+    padding: 10px;
+    box-shadow: 0 0 0;
+    margin: 6px 0;
+}
+
+#formSignup button {
+    float: right;
+    border: none;
+    border-radius: 14px;
+    color: white;
+    background: #333333;
+    font: 22px "Changa One", cursive;
+    text-transform: uppercase;
+    line-height: 26px;
+    padding: 10px 34px;
+}
+
+.date {
+    text-align: center;
+    background: #73c926;
+    color: white;
+    font: 30px "Change One", cursive;
+    line-height: 30px;
+    padding: 8px 0;
+    border-radius: 14px;
+    margin: 10px 0;
+}
+
+footer {
+    background: url(../images/bg.gif);
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer li {
+    display: inline-block;
+    padding: 0 90px 15px 0;
+}
+
+footer a {
+    color: #7c7c7c;
+    text-decoration: none;
+}
+
+footer nav a,
+footer a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+footer nav a:hover,
+footer nav .active a {
+    color: #fa97c2;
+}
+
+/* about */
+#small-banner {
+    background: url(../images/bg_slider.gif) center top repeat;
+    padding: 0.25em;
+    content: "";
+}
+
+.round-image {
+    border-radius: 15px;
+    float: left;
+    margin-right: 15px;
+}
+
+#testimonials .col {
+    background: url(../images/quot.png) top left no-repeat;
+    padding-left: 50px;
+}
+
+#testimonials h3 {
+    margin-left: -10px;
+}
+
+/* Menu */
+#menu h4 {
+    font-family: "Changa One", cursive;
+    font-weight: 400;
+    font-size: 60px;
+    margin: 10px 0;
+}
+
+/* Blog page */
+
+.list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.list li {
+    padding-bottom: 10px;
+    padding-left: 24px;
+    background: url(../images/marker1.png) 0 4px no-repeat;
+}
+
+.list a {
+    color: #7c7c7c;
+    text-decoration: none;
+}
+
+.list a:hover {
+    color: #73c926;
+}
+
+/* blog */
+.blog,
+.clearfix {
+    clear: both;
+}
+
+.frm-comment {
+    font-size: 0.75em;
+}
+
+button[type="submit"].btn-link {
+    text-decoration: underline;
+}
+
+hr {
+    border-top: 1px solid #000 !important;
+}
+
+.comment {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.head {
+    margin-bottom: 10px;
+}
+
+.user {
+    margin-right: 10px;
+}

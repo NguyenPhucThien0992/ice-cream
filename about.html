@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>1881149 - Ice-cream - About</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Changa+One&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/1881149.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="container">
+        <nav class="navbar navbar-expand-sm navbar-light px-0">
+            <a class="navbar-brand" href="index.html" id="logo">
+                <img src="./images/logo.png" alt="" />
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="navbar-nav mt-2 mt-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link " href="about.html">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0" id="formSearch">
+                    <div class="input-group input-group-sm">
+                        <input type="text" class="form-control" placeholder="Search" id="searchword" />
+                        <div class="input-group-append">
+                            <button class="btn" type="submit" id="btn-search"></button>
+                        </div>
+                    </div>
+                </form>
+                <div id="social">
+                    <a href="#" class="btn twitter"></a>
+                    <a href="#" class="btn facebook"></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header -->
+    <div class="container-fluid" id="small-banner">
+    </div>
+    <div id="content">
+        <div id="content">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-8" id="aboutus">
+
+                    </div>
+                    <div class="col-md-4" id="visions">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  -->
+        <div class="container-fluid about py-5">
+            <div class="container" id="testimonials">
+
+            </div>
+        </div>
+        <!-- testonial -->
+
+        <!--  -->
+        <div class="container py-5">
+            <div class="row" id="team">
+
+            </div>
+        </div>
+        <!--  -->
+    </div>
+    <!-- Footer -->
+    <footer class="container-fluid">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="active">
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="menu.html">Menu</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <div>
+                Ice cream &copy; |
+                <a href="#" class="text-uppercase">Privacy policy</a>
+            </div>
+        </nav>
+    </footer>
+    <!-- Footer -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.js"
+        integrity="sha256-v28e/OFwH4PmlZT+LbqfwlMOE1hImPNesl1Ha52e6pk=" crossorigin="anonymous"></script>
+    <script id="aboutus-template" type="text/x-handlebars-template">
+        {{#each data}}
+        <h3 class="text-dark">About Us</h3>
+                <img src="{{thumbpath}}" alt="" class="round-image">
+                {{{summary}}}
+                <p><a href="#" onclick="loadData(`aboutus/{{id}}`, '#content', '#details-template');">Read more</a></p>
+        {{/each}}
+        </script>
+
+    <script id="vision-template" type="text/x-handlebars-template">
+        <h3 class="text-dark">Our vision</h3>
+        {{#each data}}
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="#" onclick="loadData(`visions/{{id}}`, '#content', '#details-template');">
+                <img src="{{thumbpath}}" alt="" class="round-image ">
+                </a>
+            </div>
+            <div class="col-sm-8">
+                <a href="#" onclick="loadData(`visions/{{id}}`, '#content', '#details-template');">
+                     <h4 class="py-0 my-0">{{name}}</h4>
+                    </a>
+                <p>{{summary}}</p>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+
+    <script id="testimonials-template" type="text/x-handlebars-template">
+        <h3 class="text-white mx-0">Testimonials</h3>
+        <div class="row">
+        {{#each data}}
+            <div class="col">
+                <p>{{summary}}</p>
+                <div class="text-white">{{name}}</div>
+                    <a href="mailto:{{email}}">{{email}}</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+
+    <script id="team-template" type="text/x-handlebars-template">
+        <h3 class="text-dark">Our team</h3>
+            <div class="row">
+                {{#each data}}
+                <div class="col-md-3">
+                    <img src="{{thumbpath}}" alt="" class="round-image ">
+                    <a href="#" onclick="loadData(`team/{{id}}`, '#content', '#details-template');"><p class="text-dark font-weight-bold pt-3">{{name}}</p></a>
+                    <p>{{summary}}</p>
+                </div>
+                {{/each}}
+            </div>
+    </script>
+
+
+    <script id="details-template" type="text/x-handlebars-template">
+        <div class="container-fluid" id="small-banner"></div>
+            {{#each data}}
+            <div class="container py-5 mb-5">
+                <h3 class="text-dark">{{name}}</h3>
+                <div>
+                    <img src="{{imagepath}}" alt="" class="round-img pull-left">
+                    {{{description}}}
+                </div>
+            </div>
+            {{/each}}
+        </script>
+    <script src="./js/1881149.js"></script>
+    <script>
+        $(document).ready(function () {
+            loadData('aboutus', "#aboutus", "#aboutus-template");
+            loadData('visions', "#visions", "#vision-template");
+            loadData('testimonials', "#testimonials", "#testimonials-template");
+            loadData('team', "#team", "#team-template");
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>1881149 - Ice-cream - About</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Changa+One&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/1881149.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="container">
+        <nav class="navbar navbar-expand-sm navbar-light px-0">
+            <a class="navbar-brand" href="index.html" id="logo">
+                <img src="./images/logo.png" alt="" />
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#menu" active
+                aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="navbar-nav mt-2 mt-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="about.html">About </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="menu.html">Menu <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0" id="formSearch">
+                    <div class="input-group input-group-sm">
+                        <input type="text" class="form-control" placeholder="Search" id="searchword" />
+                        <div class="input-group-append">
+                            <button class="btn" type="submit" id="btn-search"></button>
+                        </div>
+                    </div>
+                </form>
+                <div id="social">
+                    <a href="#" class="btn twitter"></a>
+                    <a href="#" class="btn facebook"></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header -->
+
+
+    <!-- small banner -->
+    <div class="container-fluid" id="small-banner">
+    </div>
+    <div class="container" id="menu">
+        <h4 class="text-dark py-0 my-0 menu">Menu</h4>
+        <p class="font-weight-bold">Filter by category:</p>
+        <ul class="nav justify-content-left" id="gallery-categories">
+        </ul>
+        <div class="row" id="gallery">
+        </div>
+    </div>
+    <!-- small banner -->
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="menu.html" class="active">Menu</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <div>
+                Ice cream &copy; |
+                <a href="#" class="text-uppercase">Privacy policy</a>
+            </div>
+        </nav>
+    </footer>
+    <!-- Footer -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.js"
+        integrity="sha256-v28e/OFwH4PmlZT+LbqfwlMOE1hImPNesl1Ha52e6pk=" crossorigin="anonymous"></script>
+    <script id="gallery-categories-template" type="text/x-handlebars-template">
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled pl-0" onclick="loadGallery()">Show all</a>
+        </li>
+        {{#each data}}
+        <li class="nav-item">
+            <a href="#" class="nav-link" onclick="loadGallery(this, {{id}})">{{name}}</a>
+        </li>
+        {{/each}}
+        </script>
+    <script src="./js/1881149.js"></script>
+
+    <script id="gallery-template" type="text/x-handlebars-template">
+        {{#each data}}
+        <div class="col-sm-6 col-md-4 col-lg-3 my-2">
+            <a href="#">
+                <img src="{{imagepath}}" class="img-thumbnail" alt="">
+            </a>
+        </div>
+        {{/each}}
+    </script>
+    <script>
+        $(document).ready(function () {
+            loadData('gallery-categories', "#gallery-categories", "#gallery-categories-template");
+            loadData('gallery', "#gallery", "#gallery-template");
+        });
+
+        function loadGallery(link, id) {
+            if (id) {
+                loadData(`gallery/categories/${id}`, "#gallery", "#gallery-template");
+            } else {
+                loadData(`gallery`, "#gallery", "#gallery-template");
+            }
+            $("#gallery-categories .nav-link").removeClass('disabled');
+            $(link).addClass('disabled')
+        }
+    </script>
+</body>
+
+</html>

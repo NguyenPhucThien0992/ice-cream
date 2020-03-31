@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>1881149 - Ice-cream - About</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Changa+One&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/1881149.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="container">
+        <nav class="navbar navbar-expand-sm navbar-light px-0">
+            <a class="navbar-brand" href="#" id="logo">
+                <img src="./images/logo.png" alt="" />
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#menu" active
+                aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="navbar-nav mt-2 mt-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="about.html">About </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="blog.html">Blog<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0" id="formSearch">
+                    <div class="input-group input-group-sm">
+                        <input type="text" class="form-control" placeholder="Search" id="searchword" />
+                        <div class="input-group-append">
+                            <button class="btn" type="submit" id="btn-search"></button>
+                        </div>
+                    </div>
+                </form>
+                <div id="social">
+                    <a href="#" class="btn twitter"></a>
+                    <a href="#" class="btn facebook"></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header -->
+    <div class="container-fluid" id="small-banner">
+
+    </div>
+    <!--/small banner-->
+
+    <!--contact-->
+    <div class="container py-3" id="content">
+        <h3 class="text-dark">Contacts</h3>
+
+        <div id="googleMap" style="width:100%;height:400px;"></div>
+
+        <!-- <script>
+            function myMap() {
+                var mapProp = {
+                    center: new google.maps.LatLng(10.7624969, 106.6817209),
+                    zoom: 10,
+                };
+                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            }
+        </script>
+
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCu6sBuSMVktebAapYwcTM3F5f1FgSp2LU&callback=myMap">
+        </script> -->
+        <div class="row">
+            <div class="col">
+                <h3 class="text-dark">Address:</h3>
+                <div class="pt-3">
+                    227 Nguyen Van Cu Street<br> District 5
+                    <br> Hochiminh City, Vietnam
+                </div>
+            </div>
+            <div class="col">
+                <h3 class="text-dark">Phones:</h3>
+                <div class="pt-3">
+                    +1 800 559 6580<br> +1 504 889 9898
+                </div>
+            </div>
+            <div class="col">
+                <h3 class="text-dark">E-mail:</h3>
+                <div class="pt-3">
+                    <a href="mailto:mail@demolink.org">mail@demolink.org</a>
+                    <br> Illinois 121164
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3 class="text-dark">Miscellaneous information:</h3>
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam doloribus corporis aliquam, ab
+                architecto magnam rerum neque laudantium, voluptas itaque pariatur at aut voluptatum cupiditate libero
+                perspiciatis, esse eaque.</div>
+            <div class="font-italic text-truncate py-2">Send an email. All fields with an * are required.</div>
+            <form action="#" method="post" id="form-contact">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" name="name" id="name" class="form-control form-control-sm"
+                                placeholder="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" name="email" id="email" class="form-control form-control-sm"
+                                placeholder="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" name="subject" id="subject" class="form-control form-control-sm"
+                                placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea class="form-control form-control-sm" name="message" id="message" rows="3"></textarea>
+                </div>
+                <div class="text-right">
+                    <div id="msg" class="text-primary float-left"></div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label"> Send copy to yourself
+                            <input class="form-check-input" type="checkbox" name="copy" id="copy">
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-link btn-sm" style="text-decoration:underline">Send
+                        Email</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <!--/contact-->
+
+
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="menu.html">Menu</a>
+                </li>
+                <li>
+                    <a href="blog.html" class="active">Blog</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <div>
+                Ice cream &copy; |
+                <a href="#" class="text-uppercase">Privacy policy</a>
+            </div>
+        </nav>
+    </footer>
+    <!-- Footer -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
